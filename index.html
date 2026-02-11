@@ -3,45 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
+    <title>Clean Water Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+    <!-- HEADER -->
+    <header class="hero">
+        <h1>Move the bucket to collect the clean drops and avoid the polluted drops</h1>
+        <button class="restart-btn">RESTART</button>
+    </header>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+    <!-- GAME AREA -->
+    <section class="game-area">
+
+        <!-- 15 BIG CLOUDS -->
+        <img src="img/clouds.png" class="cloud c1">
+        <img src="img/clouds.png" class="cloud c2">
+        <img src="img/clouds.png" class="cloud c3">
+        <img src="img/clouds.png" class="cloud c4">
+        <img src="img/clouds.png" class="cloud c5">
+
+        <img src="img/clouds.png" class="cloud c6">
+        <img src="img/clouds.png" class="cloud c7">
+        <img src="img/clouds.png" class="cloud c8">
+        <img src="img/clouds.png" class="cloud c9">
+        <img src="img/clouds.png" class="cloud c10">
+
+        <img src="img/clouds.png" class="cloud c11">
+        <img src="img/clouds.png" class="cloud c12">
+        <img src="img/clouds.png" class="cloud c13">
+        <img src="img/clouds.png" class="cloud c14">
+        <img src="img/clouds.png" class="cloud c15">
+
+        <!-- DROPS -->
+        <img src="img/clean-drop.png" class="drop clean">
+        <img src="img/polluted-drop.png" class="drop polluted">
+
+        <!-- BUCKET + SWIPE -->
+        <div class="bucket-container">
+            <img src="img/bucket.png" class="bucket" alt="Bucket">
+            <img src="img/swipe-finger.png" class="swipe" alt="Swipe">
         </div>
+
     </section>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+    <!-- FOOTER INFO BAR -->
+    <footer class="info-bar">
+        <div class="stats">
+            <p>Time: <span id="time">25s</span></p>
+            <p>Score: <span id="score">100</span></p>
+            <p>Lives Remaining: <span id="lives">2/5</span></p>
+        </div>
+
+        <div class="brand">
+            <img src="img/charity-water-logo.png" alt="Charity Water Logo">
+            <p>charity: water</p>
+        </div>
+    </footer>
+
 </body>
 </html>
