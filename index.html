@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clean Water Game</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clean Water Game</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header class="hero">
-        <h1>Move the bucket to collect the clean drops and avoid the polluted drops</h1>
-        <button class="restart-btn">RESTART</button>
-    </header>
+  <!-- HEADER -->
+  <header class="hero">
+    <h1>Move the bucket to collect the clean drops and avoid the polluted drops</h1>
+    <button class="restart-btn">RESTART</button>
+  </header>
 
-    <!-- GAME AREA -->
-    <section class="game-area">
+  <!-- GAME AREA -->
+  <section class="game-area">
 
-        <!-- 15 BIG CLOUDS -->
-        <img src="img/clouds.png" class="cloud c1">
-        <img src="img/clouds.png" class="cloud c2">
-        <img src="img/clouds.png" class="cloud c3">
-        <img src="img/clouds.png" class="cloud c4">
-        <img src="img/clouds.png" class="cloud c5">
+    <!-- CLOUDS (12, higher) -->
+    <img src="img/clouds.png" class="cloud c1">
+    <img src="img/clouds.png" class="cloud c2">
+    <img src="img/clouds.png" class="cloud c3">
+    <img src="img/clouds.png" class="cloud c4">
+    <img src="img/clouds.png" class="cloud c5">
+    <img src="img/clouds.png" class="cloud c6">
+    <img src="img/clouds.png" class="cloud c7">
+    <img src="img/clouds.png" class="cloud c8">
+    <img src="img/clouds.png" class="cloud c9">
+    <img src="img/clouds.png" class="cloud c10">
+    <img src="img/clouds.png" class="cloud c11">
+    <img src="img/clouds.png" class="cloud c12">
 
-        <img src="img/clouds.png" class="cloud c6">
-        <img src="img/clouds.png" class="cloud c7">
-        <img src="img/clouds.png" class="cloud c8">
-        <img src="img/clouds.png" class="cloud c9">
-        <img src="img/clouds.png" class="cloud c10">
+    <!-- DROPS: 12 clean, 10 polluted, alternating and staggered -->
+    <!-- Row 1 -->
+    <img src="img/polluted-drop.png" class="drop polluted d1">
+    <img src="img/clean-drop.png"    class="drop clean d2">
+    <img src="img/polluted-drop.png" class="drop polluted d3">
+    <img src="img/clean-drop.png"    class="drop clean d4">
 
-        <img src="img/clouds.png" class="cloud c11">
-        <img src="img/clouds.png" class="cloud c12">
-        <img src="img/clouds.png" class="cloud c13">
-        <img src="img/clouds.png" class="cloud c14">
-        <img src="img/clouds.png" class="cloud c15">
+    <!-- Row 2 -->
+    <img src="img/polluted-drop.png" class="drop polluted d5">
+    <img src="img/clean-drop.png"    class="drop clean d6">
+    <img src="img/polluted-drop.png" class="drop polluted d7">
+    <img src="img/clean-drop.png"    class="drop clean d8">
 
-        <!-- DROPS -->
-        <img src="img/clean-drop.png" class="drop clean">
-        <img src="img/polluted-drop.png" class="drop polluted">
+    <!-- Row 3 -->
+    <img src="img/polluted-drop.png" class="drop polluted d9">
+    <img src="img/clean-drop.png"    class="drop clean d10">
+    <img src="img/polluted-drop.png" class="drop polluted d11">
+    <img src="img/clean-drop.png"    class="drop clean d12">
 
-        <!-- BUCKET + SWIPE -->
-        <div class="bucket-container">
-            <img src="img/bucket.png" class="bucket" alt="Bucket">
-            <img src="img/swipe-finger.png" class="swipe" alt="Swipe">
-        </div>
+    <!-- Extra clean drops to reach 12 -->
+    <img src="img/clean-drop.png"    class="drop clean d13">
+    <img src="img/clean-drop.png"    class="drop clean d14">
+    <img src="img/clean-drop.png"    class="drop clean d15">
 
-    </section>
+    <!-- Extra polluted drops to reach 10 -->
+    <img src="img/polluted-drop.png" class="drop polluted d16">
+    <img src="img/polluted-drop.png" class="drop polluted d17>
+    <img src="img/polluted-drop.png" class="drop polluted d18>
+    <img src="img/polluted-drop.png" class="drop polluted d19>
+    <img src="img/polluted-drop.png" class="drop polluted d20>
 
-    <!-- FOOTER INFO BAR -->
-    <footer class="info-bar">
-        <div class="stats">
-            <p>Time: <span id="time">25s</span></p>
-            <p>Score: <span id="score">100</span></p>
-            <p>Lives Remaining: <span id="lives">2/5</span></p>
-        </div>
+    <!-- BUCKET + SWIPE -->
+    <div class="bucket-container">
+      <img src="img/bucket.png" class="bucket" alt="Bucket">
+      <img src="img/swipe-finger.png" class="swipe" alt="Swipe">
+    </div>
 
-        <div class="brand">
-            <img src="img/charity-water-logo.png" alt="Charity Water Logo">
-            <p>charity: water</p>
-        </div>
-    </footer>
+  </section>
+
+  <!-- INFO BAR -->
+  <footer class="info-bar">
+    <div class="stats">
+      <p>Time: <span id="time">25s</span></p>
+      <p>Score: <span id="score">100</span></p>
+      <p>Lives Remaining: <span id="lives">2/5</span></p>
+    </div>
+    <div class="brand">
+      <img src="img/charity-water-logo.png" alt="Charity Water Logo">
+      <p>charity: water</p>
+    </div>
+  </footer>
 
 </body>
 </html>
